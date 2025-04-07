@@ -2,23 +2,69 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>*</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>AuraDefinitionBundle</name>
     </types>
+
     <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
+        <members>Event_Attendee__c</members>
+        <members>EventSpeakers__c</members>
+        <members>Error_Log__c</members>
+        <members>Attendee__c</members>
+        <members>Event__c</members>
+        <members>Event_Organizer__c</members>
+        <members>Speaker__c</members>
+        <members>Location__c</members>
+        <name>CustomObject</name>
     </types>
     <types>
-        <members>*</members>
-        <name>StaticResource</name>
+        <members>Event__c.Must_Select_Frequency</members>
+        <members>Event__c.You_can_Select_Frequency</members>
+        <members>Event__c.Please_select_a_location_for_InPerson</members>
+        <members>Event__c.Must_Need_to_Select_Location_If_not_Virt</members>
+         <members>Event__c.End_Date_must_be_Greater_than_Start_Date</members>
+          <members>EventSpeakers__c.Event_is_Not_Live_or_Has_been_Organized</members>
+           <members>Event_Attendee__c.Event_is_Not_Accepting_Registrations</members>
+           <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>Attendee__c.Attendee_Matching_Rule</members>
+        <members>Event_Organizer__c.Event_Organizer_Matching_Rule</members>
+        <members>Speaker__c.Speaker_Matching_Rule</members>
+        <name>MatchingRule</name>
+    </types>
+    <types>
+        <members>Attendee__c.Attendee_Duplicate_Rule</members>
+        <members>Event_Organizer__c.Event_Organizer_Duplicate_Rule</members>
+        <members>Speaker__c.Speaker_Duplicate_Rule</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
+        <members>Attendee__c.Share_Attendee_with_Organizer</members> 
+        <members>Speaker__c.Share_Speaker_With_Organizer</members> 
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>Event Manager</members> 
+        <members>Speaker</members>
+        <members>Attendee</members> 
+        <name>Profile</name>
+    </types>
+        <types>
+        <members>Event Manager</members> 
+        <members>Speaker</members>
+        <members>Attendee</members> 
+        <name>ValidationRule</name>
+    </types>
+     <types>
+        <members>EventSpeakers__c.Event_is_Not_Live_or_Has_been_Organized</members>
+        <members>Event__c.Must_Need_to_Select_Location_If_not_Virt</members>
+        <members>Event__c.Must_Select_Frequency</members>
+        <members>Event__c.Please_select_a_location_for_InPerson</members>
+        <members>Event__c.You_can_Select_Frequency</members>
+        <members>Event__c.Event_is_Not_Live_or_Has_been_Organized</members>
+        <members>Event__c.End_Date_must_be_Greater_than_Start_Date</members>
+        <members>Event_Attendee__c.Event_is_Not_Accepting_Registrations</members>
+        <name>ValidationRule</name>
     </types>
     <version>63.0</version>
 </Package>
